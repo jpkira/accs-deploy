@@ -2,10 +2,10 @@ box: Debian
 build:
   steps:
     - spellcheck:
-    files: run.sh
+      files: run.sh
 publish:
   steps:
     - install-packages:
-    packages: ca-certificates
+      packages: ca-certificates
     - internal/publish-step:
-    owner: jpkira
+      owner: jpkira
